@@ -1,0 +1,58 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+
+//create Slice is created in the name of AllValues and is imported
+const allValues=createSlice({
+    //the slice is named
+    name:"valuesContainer",
+    initialState:{
+        //data object is created with the initial values
+        data:{
+             productImg:"data:image/jpeg;base64,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",
+             productName:"OPPOF19",
+             productDescription:"OPPO F19 is officially announced on April 2021.",
+             productRating:"4.3",
+             productPrice:280,
+             productDiscount:17.91, 
+        },
+         //values object is created with the initial values
+        values:{
+             cart:0,
+             productStock:123,
+             subTotal:0,
+             total:0,
+             saved:0,
+        }
+             
+    },
+    reducers:{
+        //totalCalculation reducer calculates the final price of the item by calculating the subtotal with the discount percentage
+       totalCalculation:(state,action)=>{
+        const a=state.data.productDiscount/100;
+        const b=state.values.subTotal*a;
+        const c=Math.floor(state.values.subTotal-b);
+        state.values.saved=Math.floor(b);
+        state.values.total=c;
+       },
+       //cartDecrement reducer reduces the items in cart and increases the stock count and calculates the subTotal according to its quantity
+       cartDecrement:(state,action)=>{
+        if(state.values.cart!=0){
+            state.values.cart-=1;
+            state.values.productStock+=1;
+            state.values.subTotal-=280;
+        }
+       },
+       //cartIncrement reducer increases the items in cart and decreases the stock count and calculates the subTotal according to its quantity
+       cartIncrement:(state,action)=>{
+        if(state.values.productStock!=0){
+            state.values.cart+=1;
+            state.values.productStock-=1;
+            state.values.subTotal+=280;
+        }
+       }
+    }
+})
+//reducers is destructured and exported from allValues
+export const{cartIncrement,cartDecrement,totalCalculation}=allValues.actions;
+//allValues is exported by default
+export default allValues.reducer;
