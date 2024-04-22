@@ -1,5 +1,5 @@
 *{
-    background-color:paleturquoise;
+    background-color:whitesmoke;
 }
 img{
     height: 200px;
@@ -54,7 +54,7 @@ img{
 }
 button{
     border: none;
-    background-color:slateblue;
+    background-color:rgb(146, 241, 253);
     height: 35px;
     width:100px;
     border-radius: 15px;
